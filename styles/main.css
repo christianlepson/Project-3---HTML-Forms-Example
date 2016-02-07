@@ -43,7 +43,6 @@ form {
   Base Layout Styles
 ==================================== */
 
-/* ---- Navigation ---- */
 
 
 /* ---- Layout Containers ---- */
@@ -110,8 +109,8 @@ input:-moz-placeholder {
 	font-style: italic;
 }
 
-input[type=text],
-select,
+.contact-info input,
+.contact-info select,
 textarea {
 	display: block;
 	width: 100%;
@@ -122,6 +121,10 @@ textarea {
 	font-size: 1.5em;
 }
 
+#zip {
+	width: 150px;
+}
+
 button {
 	width: 100%;
 	border: none;
@@ -130,6 +133,12 @@ button {
 	background-color: #4ebbb5;
 	padding: 25px 0;
 	margin: 0 auto;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	background-color: lightblue;
 }
 
 /* ================================= 
@@ -146,15 +155,20 @@ button {
 		max-width: 750px;
 	}
 
+	label {
+	width:25%;
+	}
+
 	.contact-info input,
 	.contact-info select{
-		width: 75%;
-		float: right;
+		width: 74%;
+		display: inline-block;
 	}
 
 	.contact-info label {
 	height: 60px;
 	padding-bottom: 0;
-}
+	}
+
 }
 
