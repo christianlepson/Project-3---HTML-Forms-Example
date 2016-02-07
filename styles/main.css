@@ -1,0 +1,160 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+	color: #2d3945;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+fieldset {
+	border: none;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.4em;
+	margin: 0;
+	padding-top: 20px;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-bottom: 40px;
+}
+
+label {
+	display: inline-block;
+	padding-bottom: 15px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	height: 70px;
+	background-color: #2d3945;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	padding-top: 1px;
+}
+
+.main-content {
+	width:90%;
+	margin: 0 auto;
+}
+
+.signup-info {
+	padding-bottom: 25px;
+	border-bottom: solid #2d3945 5px;
+	margin-bottom: 3px;
+	text-align: center;
+}
+
+.signup-form {
+	padding: 25px 0;
+	border-top: solid #2d3945 2px;
+	margin-top: 1px;
+}
+
+/* ---- Page Elements ---- */
+
+/* Align Placeholder Text Right */
+::-webkit-input-placeholder {
+	text-align:right;
+	font-style: italic;
+	font-size: .8em;
+	}
+
+input:-moz-placeholder {
+	text-align:right;
+	font-style: italic;
+	font-size: .8em;
+}
+
+.main-title {
+	align-self: center;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+.accent {
+	color: #a4a9ae;
+	font-size: .9em;
+	margin: 0;
+	padding: 0;
+}
+
+.copyright {
+	margin: 20px auto;
+	text-align: center;
+	padding-bottom: 10px;
+	font-style: italic;
+}
+
+input[type=text],
+select,
+textarea {
+	display: block;
+	width: 100%;
+	background-color: #eff0f1;
+	border: none;
+	border-radius: 5px;
+	height: 50px;
+	font-size: 1.5em;
+}
+
+button {
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #4ebbb5;
+	padding: 25px 0;
+	margin: 0 auto;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+	.main-title {
+		font-size: 1.8em;
+	}
+
+	.main-content {
+		max-width: 750px;
+	}
+
+	.contact-info input,
+	.contact-info select{
+		width: 75%;
+		float: right;
+	}
+
+	.contact-info label {
+	height: 60px;
+	padding-bottom: 0;
+}
+}
+
